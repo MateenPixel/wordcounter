@@ -1,5 +1,6 @@
 const wordsTextarea = document.querySelector(".word-counter-container .words");
 const countBtn = document.querySelector(".word-counter-container .count-btn");
+const clearBtn = document.querySelector(".word-counter-container .clear-btn");
 const wordCount = document.querySelector(".word-counter-container .word-count span");
 
 const countWords = () => {
@@ -36,4 +37,10 @@ const animateCount = (endValue) => {
     requestAnimationFrame(step);
 };
 
+const clearText = () => {
+    wordsTextarea.value = '';
+    animateCount(0);
+    }
+
 countBtn.addEventListener("click", countWords);
+clearBtn.addEventListener("click", clearText);

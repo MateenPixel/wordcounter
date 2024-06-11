@@ -25,7 +25,7 @@
         margin: 0 auto;
     }
 
-    .word-counter-container .count-btn {
+    .word-counter-container .count-btn, .word-counter-container .clear-btn {
         padding: 16px 20px;
         margin: 32px;
         font-size: 32px;
@@ -39,7 +39,7 @@
         transition: all 500ms ease;
     }
 
-    .word-counter-container .count-btn:hover {
+    .word-counter-container .count-btn:hover, .word-counter-container .clear-btn {
         background: #14213d;
     }
 
@@ -55,3 +55,5 @@
         font-size: 30px;
         font-weight: bold;
     }
+
+    
